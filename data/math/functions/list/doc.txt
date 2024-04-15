@@ -1,6 +1,0 @@
-#临时对象
-{
-	storage math:io list,
-	list_phi int,
-	list_n int
-}

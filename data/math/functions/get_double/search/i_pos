@@ -1,0 +1,4 @@
+#math:get_double/search/$i_pos
+
+execute store result score digits int run data get storage math:io double $10^(7-i)
+scoreboard players set exp int $i
