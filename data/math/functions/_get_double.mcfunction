@@ -3,8 +3,7 @@
 # 输入storage math:io double
 # 输出{<sign,int>, <digits,int> ,<exp,int>}
 
-function math:get_double/string with storage math:io {}
-data modify storage math:io char set string storage math:io string 0 1
+data modify storage math:io char set string storage math:io double 0 1
 scoreboard players set sign int 1
 execute if data storage math:io {char:"-"} run scoreboard players set sign int -1
 
