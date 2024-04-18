@@ -18,6 +18,9 @@ data modify storage math:io xyz set value [0.0d,0.0d,0.0d]
 function math:marker_pool/_clear
 scoreboard players set marker_pool_vol int 16
 
+# 空间初始化
+function math:space/init
+
 # 设置常量
 scoreboard players set -10000 int -10000
 scoreboard players set -1000 int -1000

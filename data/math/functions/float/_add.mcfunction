@@ -28,9 +28,9 @@ execute if score sstempe int matches 6.. run function math:float/add_search/6_8
 scoreboard players operation float_int0 int += sstemp1 int
 
 #对齐小数点
-execute if score float_int0 int matches 100000.. run function math:hpo/float/add_search/align_s2
-execute if score float_int0 int matches 100..99999 run function math:hpo/float/add_search/align_s1
-execute if score float_int0 int matches 0..99 run function math:hpo/float/add_search/align_s0
+execute if score float_int0 int matches 100000.. run function math:float/add_search/align_s2
+execute if score float_int0 int matches 100..99999 run function math:float/add_search/align_s1
+execute if score float_int0 int matches 0..99 run function math:float/add_search/align_s0
 
 scoreboard players operation float_int1 int = float_int0 int
 scoreboard players operation float_int0 int /= 10000 int
