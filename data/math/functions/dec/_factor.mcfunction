@@ -1,8 +1,9 @@
 #math:dec/_factor
 # 计算dec*idec//jdec
 # 输入{<dec,int>,<idec,int>,<jdec,int>}
-# dec: [-463409999, 463409999]
-# idec: [-463409999, 463409999]
+# 输出<dec,int>
+# dec: [-463399999, 463409999]
+# idec: [-463399999, 463409999]
 # jdec: [-214748364, 214748364]
 
 # 获取符号
@@ -84,9 +85,9 @@ scoreboard players operation dec int += res int
 
 # E0
 scoreboard players operation res int = mod int
-scoreboard players operation res int *= 10 int
 scoreboard players operation sstemp_b int *= sstemp_d int
 scoreboard players operation res int += sstemp_b int
+scoreboard players operation res int *= 10 int
 scoreboard players operation jdec int /= sstemp1 int
 scoreboard players operation sstemp2 int = res int
 scoreboard players operation res int /= jdec int

@@ -18,7 +18,9 @@ scoreboard objectives add x dummy
 scoreboard objectives add y dummy
 scoreboard objectives add z dummy
 scoreboard objectives add int dummy
+scoreboard objectives add timer dummy
 scoreboard objectives add killtime dummy
+scoreboard objectives add customdata_type dummy
 
 # 设置常量
 scoreboard players set -10000 int -10000

@@ -1,7 +1,14 @@
 #math:test
-kill @e[tag=test_marker]
-execute in minecraft:overworld run summon marker 0 0 0 {Tags:["test_marker"],UUID:[I;0,0,0,2],CustomName:'{"text":"test_marker"}'}
-execute in minecraft:overworld run scoreboard players set 0-0-0-0-2 int 8593
-execute in minecraft:overworld as 0-0-0-0-2 run tellraw @a ["score: ", {"score":{"name":"@s","objective":"int"}}]
-execute in minecraft:the_nether run tp 0-0-0-0-2 0 0 0
-execute in minecraft:the_nether as 0-0-0-0-2 run tellraw @a ["score: ", {"score":{"name":"@s","objective":"int"}}]
+
+say hi
+
+tag @e[tag=result] remove result
+summon armor_stand 0 0 0 {Tags:["result"]}
+item replace entity @e[tag=result,limit=1] armor.head with glass
+
+execute as @e[tag=result,limit=1] run function marker_control:data/_get
+data modify storage marker_control:io result.del_func set value "math:test"
+execute as @e[tag=result,limit=1] run function marker_control:data/_store
+
+tag @e[tag=result,limit=1] add entity_todel
+scoreboard players set @e[tag=result,limit=1] killtime 20

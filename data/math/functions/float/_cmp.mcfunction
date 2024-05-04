@@ -1,4 +1,4 @@
-#math:hpo/float/_cmp
+#math:float/_cmp
 # 比较浮点数大小
 # 输入比较数ifloat
 # 输出比较大小结果到<res,int>

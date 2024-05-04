@@ -1,0 +1,6 @@
+# facing_tester的数据模板
+{
+	states: ["horizontal","vertical"],
+	facing_rate: 1,
+	invisible:1b
+}
