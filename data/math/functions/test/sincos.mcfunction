@@ -1,4 +1,5 @@
 #math:test/sincos
+# 聊天栏调用
 
 tellraw @a "--- sincos test ---"
 

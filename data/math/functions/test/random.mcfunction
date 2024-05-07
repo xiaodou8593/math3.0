@@ -1,4 +1,5 @@
 #math:test/random
+# 聊天栏调用
 
 tellraw @a "--- random test ---"
 

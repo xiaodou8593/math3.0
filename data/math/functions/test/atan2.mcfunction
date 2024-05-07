@@ -1,4 +1,5 @@
 #math:test/atan2
+# 聊天栏调用
 
 tellraw @a "--- atan2 test ---"
 
