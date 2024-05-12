@@ -1,3 +1,3 @@
 #math:_print_xyz
 
-tellraw @a ["<",{"selector":"@s"},"> xyz: ",{"score":{"name":"@s","objective":"x"}},", ",{"score":{"name":"@s","objective":"y"}},", ",{"score":{"name":"@s","objective":"z"}}]
+tellraw @a ["xyz: ",{"score":{"name":"x","objective":"int"}},", ",{"score":{"name":"y","objective":"int"}},", ",{"score":{"name":"z","objective":"int"}}]

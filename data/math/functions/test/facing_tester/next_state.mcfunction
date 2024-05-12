@@ -1,4 +1,5 @@
 #math:test/facing_tester/next_state
+# math:test/facing_tester/main调用
 
 function marker_control:data/_get
 data remove storage marker_control:io result.states[0]
